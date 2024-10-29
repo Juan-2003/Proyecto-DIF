@@ -1,0 +1,12 @@
+{
+    "LoginInputFields":[
+        {
+            "id": 1,
+            "title":"Correo Electronico"
+        },
+        {
+            "id": 2,
+            "title":"Contraseña"
+        }
+    ]
+}

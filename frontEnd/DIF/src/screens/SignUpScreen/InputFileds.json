@@ -1,0 +1,56 @@
+{
+    "inputFileds":[
+        {
+            "id": 1,
+            "title": "Nombre"
+        },
+        {
+            "id": 2,
+            "title": "Apellido Paterno"
+        },
+        {
+            "id": 3,
+            "title": "Apellido Materno"
+        },
+        {
+            "id": 4,
+            "title": "Fecha de Nacimiento"
+        },
+        {
+            "id": 5,
+            "title": "Genero"
+        },
+        {
+            "id": 6,
+            "title": "Estado"
+        },
+        {
+            "id": 7,
+            "title": "Ciudad"
+        },
+        {
+            "id": 8,
+            "title": "Dirección"
+        },
+        {
+            "id": 9,
+            "title": "Codigo Postal"
+        },
+        {
+            "id": 10,
+            "title": "Número de Telefono"
+        },
+        {
+            "id": 11,
+            "title": "Correo Electronico"
+        },
+        {
+            "id": 12,
+            "title": "Contraseña"
+        },
+        {
+            "id": 13,
+            "title": "Confirmación de contraseña"
+        }
+    ]
+}
