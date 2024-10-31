@@ -1,16 +1,21 @@
 import Button from "@/src/components/global/button";
 import React from "react";
-import {View, Text, StyleSheet} from "react-native";
+import {View, Text, StyleSheet,} from "react-native";
+import { StackNavigationProp } from "@react-navigation/stack";
 
-export default function ButtonArea(){
+interface Props {
+    navigation: StackNavigationProp<any>;
+  }
+
+export default function ButtonArea({ navigation }: Props){
     return(
         <View style={styles.container}>
             <View style={styles.buttonContainer}>
-                <Button title="Regístrarse"/>
+                <Button title="Regístrarse"  onPressNavigation={() => navigation.navigate("SignUpScreen")}/>
                 <Text style={styles.text}>¿Nuevo por aquí?</Text>
             </View>
             <View style={styles.buttonContainer}>
-                <Button title="Iniciar Sesión"/>
+                <Button title="Iniciar Sesión" onPressNavigation={() => navigation.navigate("LoginScreen")}/>
                 <Text style={styles.text}>¿Ya tienes cuenta?</Text>
             </View>
         </View>

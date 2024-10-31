@@ -3,13 +3,18 @@ import {View, Text, StyleSheet} from "react-native";
 import WelcomeHeader from "./WelcomeHeader";
 import TextArea from "./TextArea";
 import ButtonArea from "./ButtonArea";
+import { StackNavigationProp } from "@react-navigation/stack";
 
-export default function WelcomeScreen(){
+interface Props {
+    navigation: StackNavigationProp<any>;
+}
+
+export default function WelcomeScreen({ navigation }: Props){
     return(
         <View style={styles.container}>
             <WelcomeHeader/>
             <TextArea/>
-            <ButtonArea/>
+            <ButtonArea navigation={navigation}/>
         </View>
     );
 }

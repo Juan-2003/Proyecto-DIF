@@ -5,8 +5,14 @@ import Input from "@/src/components/global/input";
 import Button from "@/src/components/global/button";
 
 import LoginInputFields from "./LoginInputFields.json"
+import { StackNavigationProp } from "@react-navigation/stack";
 
-export default function LoginForm(){
+
+interface Props {
+    navigation: StackNavigationProp<any>;
+  }
+
+export default function LoginForm({ navigation }: Props){
     const [formData, setFormData] = useState({
         mail: "",
         password: ""
@@ -40,7 +46,7 @@ export default function LoginForm(){
                     </TouchableOpacity>
                 </View>
 
-                <Button title="Iniciar Sesión"/>
+                <Button title="Iniciar Sesión" onPressNavigation={() => navigation.navigate("DrawerNavigation")}/>
                 </View>
            </ScrollView>
         </View>

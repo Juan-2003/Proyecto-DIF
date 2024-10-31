@@ -3,12 +3,13 @@ import {View, Text, TouchableOpacity, StyleSheet} from "react-native";
 
 interface ButtonProps{
     title : string;
+    onPressNavigation: () => void;
 }
 
-export default function Button({title}:ButtonProps){
+export default function Button({title,onPressNavigation}:ButtonProps){
     return(
         <View>
-            <TouchableOpacity style={styles.button}>
+            <TouchableOpacity style={styles.button} onPress = {onPressNavigation}>
                 <Text style={styles.buttonTitle}>{title}</Text>
             </TouchableOpacity>
         </View>
